@@ -237,6 +237,20 @@ nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #17A2B8;
+  color: white;
+  margin: 10px 0px 20px;
+  cursor: pointer;
+  padding: 10px 5%;
+  width: 200px;
+  font-size: 2rem;
+  border-radius: 10px;
+  height: 50px;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -249,6 +263,13 @@ header {
 }
 header h1 {
   margin-top: 20px;
+}
+@media ( max-width: 500px ) {
+  header header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .text-content h2 {
   margin: 20px 0;
