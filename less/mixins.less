@@ -1,1 +1,28 @@
 // Mixins in here
+
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navstuff() {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;  
+}
+
+.custom-button()
+
+// parametric
+
+.custom-layout(@justify, @align) {
+  display: flex;
+  justify-content: @jusfify;
+  align-items: @align;
+}
+
+.footer-btn() {
+
+}
