@@ -179,6 +179,17 @@ nav a {
   color: black;
   font-size: 1.2rem;
   max-width: 100%;
+  text-decoration: none;
+}
+@media ( max-width: 500px ) {
+  nav a {
+    text-decoration: none;
+  }
+}
+@media ( max-width: 500px ) {
+  nav {
+    margin-top: 20px;
+  }
 }
 .footer {
   width: 100%;
@@ -203,6 +214,8 @@ nav a {
     max-width: 90%;
     width: 100%;
     margin: 10%;
+    margin-top: -20px;
+    border-top: 2px dashed silver;
   }
 }
 .home .content-section .text-content {
@@ -283,10 +296,15 @@ header {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  border-bottom: 2px dashed grey;
 }
 header h1 {
   margin-top: 20px;
+}
+@media ( max-width: 500px ) {
+  header h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
 }
 @media ( max-width: 500px ) {
   header {
@@ -318,15 +336,14 @@ header h1 {
   }
 }
 @media ( max-width: 500px ) {
-  .text-content .h2 {
-    margin-left: 50px;
-    width: 90%;
-  }
-}
-@media ( max-width: 500px ) {
   .home .content-section .text-content {
     width: 100%;
     justify-content: center;
     align-items: center;
+  }
+}
+@media ( max-width: 500px ) {
+  .big-h2 {
+    text-align: center;
   }
 }
