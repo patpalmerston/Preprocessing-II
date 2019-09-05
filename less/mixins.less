@@ -1,1 +1,56 @@
 // Mixins in here
+
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-mobile() {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+      h1 {
+        order: -1;
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+
+      }
+
+      nav {
+        order: 1;
+      }
+}
+
+.navstuff() {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;  
+}
+
+
+// parametric
+
+.custom-layout(@justify, @align) {
+  display: flex;
+  justify-content: @jusfify;
+  align-items: @align;
+}
+
+.custom-btn(@width: 200px, @bg-color:@eastern-blue, @font-color: white) {
+  .center;
+  background-color: @bg-color;
+  color: @font-color;
+  margin: 10px 0px 20px;
+  cursor: pointer;
+  padding: 10px 5%;
+  width: @width;
+  font-size: 2rem;
+  border-radius: 10px;
+  height: 50px;
+}
